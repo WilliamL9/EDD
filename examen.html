@@ -1,0 +1,107 @@
+<!-- 1 pto -->
+<!-- COMPLETAR LOS ATRIBUTOS QUE FALTAN en doctype, html y meta -->
+<!-- Importar la libreria jQuery de https://code.jquery.com/jquery-3.5.1.min.js -->
+<!-- Usar e importar el script code.js-->
+<!-- Importar el style del fichero style.css -->
+<!-- OJO! Los elementos link ya puestos, están correctos y no hay que tocarlos. -->
+
+<!DOCTYPE>
+<html>
+
+  <head>
+    <meta>
+    <title>EXAMEN jQUERY</title>
+    <link rel="shortcut icon" href="https://www.salesianos.edu/wp-content/uploads/2017/05/LogoSalesianos_100.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="examen.css">
+    <script src="../Ejercicios JQuery/jquery-3.5.1.min.js"></script>
+    <script src="examen.js"></script>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h1>Mi sitio web</h1>
+      <p>Examen de segunda evaluación: jQUERY</p>
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="topnavlink"><i class="fa fa-fw fa-home"></i> Inicio</a>
+      <a href="#" class="topnavlink"><i class="fa fa-fw fa-search"></i> Buscar</a>
+      <a href="#" class="topnavlink" id="secciones"> Secciones <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown">
+        <div class="dropdown-content" id="submenu">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#" class="topnavlink" id="login"><i class="fa fa-fw fa-user"></i> Login</a>
+      <form action="#" id="loginform">
+        <!-- 0,5ptos -->
+        <!-- Completar con 2 inputs, uno tipo texto para usuario y otro tipo password para la contraseña-->
+        <input type="text" id="name" name="usuario">
+        <input type="password" id="password" name="password">
+        
+        <input type="submit" value="Entrar" />
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+
+        <div class="card">
+          <h2 id="primertitular"><i class="fa fa-fw fa-newspaper-o"></i> TITULAR</h2>
+          <div class="contenidonoticiaprimera">
+            <h5>Descripción, 7 Feb, 2021</h5>
+            <div class="fakeimg" style="height:200px;">Imagen</div>
+            <p>Algo de texto</p>
+            <p id="firstdescription">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco.</p>
+            <span id="totalwordsfirst"></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 id="segundotitular"><i class="fa fa-fw fa-newspaper-o"></i> TITULAR</h2>
+          <div class="contenidonoticiasegunda">
+            <h5>Descripción, 7 Feb, 2021</h5>
+            <div class="fakeimg" style="height:200px;">Imagen</div>
+            <p>Algo de texto</p>
+            <p id="seconddescription">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamc</p>
+            <span id="totalwordssecond"></span>
+          </div>
+
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2 id="aboutme">Sobre mi <i class="fa fa-fw fa-picture-o"></i></h2>
+          <div class="aboutme">
+            <div class="fakeimg" style="height:100px;">Imagen</div>
+            <p> in culpa qui officia deserunt mollit anim..</p>
+          </div>
+
+        </div>
+        <div class="card">
+          <h3>Euromillones <i class="fa fa-fw fa-star"></i></h3>
+          <div class="euromillones"></div>
+          <div class="euromillonesestrellas"></div>
+        </div>
+        <div class="card">
+          <h3>Sígueme</h3>
+          <p><i class="fa fa-fw fa-facebook"></i> Facebook</p>
+          <p><i class="fa fa-fw fa-twitter"></i> Twitter</p>
+          <p><i class="fa fa-fw fa-twitch"></i> Twitch</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Colegio Salesianos el Pilar de Zaragoza, DAM
+    </div>
+  </body>
+
+</html>
